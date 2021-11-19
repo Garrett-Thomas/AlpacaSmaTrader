@@ -10,15 +10,16 @@ It recalculates the averages every minute. Will send a message on trade executio
 ---
 2. Set Environment Variables (Fill in your info between quotes)
 
-    `cat <<EOF>> ~/.zprofile
+    ```
+    cat <<EOF>> ~/.zprofile
     export APCA_API_KEY_ID=""
     export APCA_API_SECRET_KEY=""
     export TRADING_EMAIL=""
     export EMAIL_PASSWD=""
     export EMAIL_RECEIVER=""
     export SMTP_URL=""
-    EOF`
-
+    EOF
+    ```
 ---
 3. Let 'er rip!
 
@@ -29,5 +30,6 @@ It recalculates the averages every minute. Will send a message on trade executio
 ## Note
 The current script is set up for paper trading.
 To live trade, remove the line
-
-    `os.environ['APCA_API_BASE_URL'] = 'https://paper-api.alpaca.markets'`
+```
+    os.environ['APCA_API_BASE_URL'] = 'https://paper-api.alpaca.markets'
+```
